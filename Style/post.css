@@ -140,7 +140,7 @@ nav ul li a.scrolled:hover {
 #hero {
     display: inline-block;
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/thomasmineo/Images/Post_Image/1_Cube.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/Images/Post_Image/1_Cube.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
