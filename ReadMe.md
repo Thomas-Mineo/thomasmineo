@@ -18,5 +18,6 @@ Tickets :
 [x] Responsive menu
 [x] Responsive blog padding and title padding in english
 [x] responsive article
+[] Add automatic adding to blog page
 
 Inspiration : https://markmanson.net/
