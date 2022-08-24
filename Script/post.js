@@ -49,7 +49,7 @@ getData()
     .catch(err => console.log(err));
 
 async function getData() {
-    const postStream = await fetch('../Data/posts.json');
+    const postStream = await fetch('/thomasmineo/Data/posts.json');
     const posts = await postStream.json();
     let i = 0;
 

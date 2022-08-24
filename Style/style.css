@@ -104,14 +104,14 @@ nav ul li a img {
     justify-content: flex-start;
     min-height: 100vh;
     background-color: rgb(207, 230, 241, 1);
-    background-image: url("../Images/Circle.png");
+    background-image: url("/thomasmineo/Images/Circle.png");
     background-repeat: no-repeat;
     background-position: -275px 100%;
     position: static;
 }
 
 .hero:hover {
-    background-image: url("../Images/Circle.png");
+    background-image: url("/thomasmineo/Images/Circle.png");
     animation: test 1.5s;
     animation-fill-mode: forwards;
 }
