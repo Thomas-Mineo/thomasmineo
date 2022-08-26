@@ -333,6 +333,65 @@ ul.socialLinks>li>a>img:hover {
 }
 
 
+/* Recomendations */
+
+.recomendations {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5rem;
+}
+
+.recomendations h1 {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0rem 3rem 0rem;
+}
+
+.grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 1rem 1rem;
+}
+
+.grid>*>a>img {
+    object-fit: cover;
+    height: 13rem;
+    width: 100%;
+}
+
+.grid>*>a>p {
+    text-align: center;
+    color: black;
+    font-weight: 400;
+}
+
+.grid>*>a {
+    text-decoration: none;
+}
+
+@media screen and (max-width:1000px) {
+    .grid {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .recomendations h1 {
+        padding: 0px;
+    }
+    .grid {
+        width: 90%;
+    }
+}
+
+
 /* Copyright */
 
 footer {
