@@ -125,7 +125,7 @@ nav ul li a img {
     background-image: url("/Images/Circle.png");
     background-repeat: no-repeat;
     background-position: -275px center;
-    position: static;
+    position: relative;
 }
 
 .hero:hover {
