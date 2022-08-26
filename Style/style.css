@@ -1,3 +1,4 @@
+html,
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
@@ -36,6 +37,12 @@ body {
     }
 }
 
+@media screen and (max-width:1000px) {
+    body {
+        width: 100%;
+    }
+}
+
 
 /* Nav */
 
@@ -55,15 +62,6 @@ nav ul {
     width: max-content;
     justify-content: flex-end;
     padding: 0px;
-}
-
-.navTitle {
-    padding: 0rem 2rem;
-    font-weight: 500;
-    font-size: 1.5rem;
-    text-align: left;
-    width: max-content;
-    margin: 0;
 }
 
 nav ul li {
@@ -95,6 +93,25 @@ nav ul li a img {
     align-items: center;
 }
 
+@media screen and (max-width:1000px) {
+    nav {
+        padding: 1rem 1rem 0rem 0.75rem;
+    }
+}
+
+;
+@media screen and (max-width:600px) {
+    #logo>img {
+        height: 3rem;
+    }
+    nav ul li {
+        padding: 0rem 1rem;
+    }
+    nav {
+        padding: 1rem 1rem 0rem 0.5rem;
+    }
+}
+
 
 /* Hero Banner */
 
@@ -106,7 +123,7 @@ nav ul li a img {
     background-color: rgb(207, 230, 241, 1);
     background-image: url("/Images/Circle.png");
     background-repeat: no-repeat;
-    background-position: -275px 100%;
+    background-position: -275px center;
     position: static;
 }
 
@@ -118,7 +135,7 @@ nav ul li a img {
 
 @keyframes test {
     100% {
-        background-position: left 100%;
+        background-position: left center;
     }
 }
 
@@ -136,12 +153,32 @@ nav ul li a img {
     transform: rotate(180deg);
 }
 
+@media screen and (max-width:1000px) {
+    .wave {
+        width: 150%
+    }
+}
+
+@media screen and (max-width:600px) {
+    .wave {
+        width: 250%
+    }
+    .title {
+        font-size: 16vw;
+        line-height: 17vw;
+    }
+    .hero {
+        justify-content: center;
+    }
+}
+
 
 /* Presentation */
 
 .row {
     display: flex;
     position: relative;
+    overflow-x: hidden;
 }
 
 .column {
@@ -155,12 +192,33 @@ nav ul li a img {
     justify-content: center;
     align-items: center;
     font-size: 3rem;
-    padding: 0rem 2rem;
+    padding: 0rem 0rem 0rem 2rem;
     text-align: center;
 }
 
 .column>img {
     height: 75vh;
+}
+
+@media screen and (max-width:1000px) {
+    .column.text {
+        font-size: 2rem;
+        padding: 0rem 0rem 0rem 0.5rem;
+        z-index: 2;
+    }
+    .column>img {
+        height: 47.5vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .column.text {
+        font-size: 6vw;
+        z-index: 2;
+    }
+    .column>img {
+        height: 35vh;
+    }
 }
 
 
@@ -186,6 +244,8 @@ nav ul li a img {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 95%;
+    padding: 6rem 0 0 0;
 }
 
 ul.socialLinks>li {
@@ -245,6 +305,24 @@ ul.socialLinks>li>a>img:hover {
     }
 }
 
+@media screen and (max-width:1000px) {
+    ul.socialLinks>li {
+        width: 6rem;
+    }
+    ul.socialLinks>li>a>img {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width:600px) {
+    ul.socialLinks>li {
+        width: 6rem;
+    }
+    ul.socialLinks>li>a>img {
+        height: 3.5rem;
+    }
+}
+
 
 /* Posts */
 
@@ -260,61 +338,9 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     background-color: rgb(207, 230, 241, 1);
-}
-
-
-/* Responsive */
-
-@media screen and (max-width:1000px) {
-    .wave {
-        width: 150%
-    }
-    .column.text {
-        font-size: 2rem;
-        padding: 0rem 0.5rem;
-        z-index: 2;
-    }
-    .column>img {
-        height: 47.5vh;
-    }
-    ul.socialLinks>li {
-        list-style: none;
-        width: 6rem;
-    }
-    ul.socialLinks>li>a>img {
-        height: 4rem;
-    }
-}
-
-@media screen and (max-width:600px) {
-    .title {
-        font-size: 4.5rem;
-        line-height: 5rem;
-    }
-    .hero {
-        justify-content: center;
-    }
-    nav ul li {
-        padding: 0rem 1rem;
-    }
-    .wave {
-        width: 250%
-    }
-    .column.text {
-        font-size: 1.5rem;
-        z-index: 2;
-    }
-    .column>img {
-        height: 35vh;
-    }
-    ul.socialLinks>li {
-        list-style: none;
-        width: 6rem;
-    }
-    ul.socialLinks>li>a>img {
-        height: 3.5rem;
-    }
+    font-size: 3vmin;
 }
 
 
